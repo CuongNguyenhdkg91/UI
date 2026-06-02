@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="maui.MainWindow"
+        xmlns:local="clr-namespace:maui"
+        Title="MainWindow"
+        >
+    <Window.Resources>
+        <local:ButtonCollection x:Key="ButtonCollectionSource" />
+        <local:Login x:Key="LoginSource" />
+        <local:NewsAdmin x:Key="NewsAdminSource" />
+    </Window.Resources>
+
+    <ContentControl Content="{Binding Source={StaticResource LoginSource}}" />
+    <!-- <ContentControl Content="{Binding Source={StaticResource NewsAdminSource}}" /> -->
+     <!-- <ContentControl Content="{Binding Source={StaticResource ButtonCollectionSource}}" /> -->
+
+
+</Window>

@@ -1,0 +1,70 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="maui.ButtonCollection"
+        FontFamily="Gabriola"
+        >
+
+  <UserControl.Styles>
+    <Style Selector="Button.primaryButton">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="Height" Value="35"/>
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+        <!-- <Setter Property="FontFamily" Value="Gabriola"/> -->
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+
+        <Setter Property="Background" Value="#3D7AD7"/> 
+        <Setter Property="Foreground" Value="White"/>
+
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <Style Selector="Button.primaryButton:pointerover">
+        <Setter Property="Background" Value="#2D89EF"/> 
+    </Style>
+
+    <Style Selector="Button.primaryButton:pressed/template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="#164080"/>
+    </Style>
+    
+
+    <Style Selector="TextBox.PasswordBox">
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Width" Value="250"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="CornerRadius" Value="5"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+
+        <Setter Property="FontSize" Value="14"/>
+        <!-- <Setter Property="Padding" Value="8,0"/> -->
+        <Setter Property="BorderBrush" Value="#CCCCCC"/>
+
+        <Setter Property="Background" Value="#F5EAEA"/>
+        <Setter Property="Foreground" Value="#BCBABA"/>
+    </Style>
+  </UserControl.Styles>
+
+  <StackPanel Margin="20">
+    <Button Content="Submit" Classes="primaryButton"/>
+    <Button Content="Đăng Nhâp 🌸" Classes="primaryButton"/>
+    <!-- <Entry x:Name="PasswordEntry" Placeholder="Enter password" IsPassword="True" /> -->
+    <TextBox Watermark="Enter password" PasswordChar="*" Classes="PasswordBox"/>
+    <TextBox Watermark="Nhạâp mât khâảu" Classes="PasswordBox"/>
+  </StackPanel>
+
+  <!-- <Header>
+    <TextBlock Text="Header" FontSize="24" FontWeight="Bold" Margin="10"/>
+    <StackPanel Orientation="Horizontal" Margin="10">
+      <Button Content="Button 1" Margin="5"/>
+      <Button Content="Button 2" Margin="5"/>
+    </StackPanel>
+  </Header> -->
+
+</UserControl>
