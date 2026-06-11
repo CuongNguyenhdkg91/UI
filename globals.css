@@ -1,0 +1,130 @@
+@import url('/PageAsset/artFonts.css');  /* must not comment the top import line */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald&display=swap'); */
+
+@tailwind base;
+/* @tailwind components; */
+@tailwind utilities;
+
+/* to disable webkit styling */
+@layer base {
+  a {
+    @apply no-underline text-inherit;
+  }
+  ul{
+    @apply list-none;
+  }
+}
+
+/* * {
+  all: unset;
+} */
+
+*{
+  margin:0;
+}
+
+body {
+  /* overflow: hidden; */
+}
+
+
+/* ul{
+  display: flex;
+
+  li{
+    list-style-type: none;
+    }
+} */
+
+
+
+/* .wrapper-LoginModal{
+  div{
+    border-radius: inherit;
+    border-color: inherit;
+  }
+  use theme variable instead of inherit
+  img{
+    height: 100%;
+  }
+} */
+
+@keyframes riseUp {
+  0%{
+    transform: translateY(-4px)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+
+
+.instruction {
+
+  strong{
+    font-size: 16pt;
+    color:#f79f1f;
+  }
+
+  strong span {
+  font-size:14pt;
+  color:rgb(225,35,120);
+  padding-left: 5px;
+  }
+
+  .imgBox{
+  width: 50%;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 25px;
+  padding: 0;
+  }
+  
+  p{
+  font-size: 14pt;
+  margin-top: 0;
+  }
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+table.database{
+  border-width: 1px;
+  border-style: solid;
+  font-family: 'Courier New', Courier, monospace;
+
+  th{
+    border-width: 1px;
+    border-style: solid;
+    min-width: 40px;
+    background-color: #e7e7af;
+
+   }
+
+  th:nth-child(1){
+    min-width: 50px;
+  }
+
+  td{
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+    /* max-width: 400px; */
+    overflow: hidden;
+    /* background-color: #ffffef; */
+    font-size: large;
+    }
+}
+
+
+
+
+

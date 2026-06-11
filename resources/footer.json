@@ -1,0 +1,46 @@
+[
+  {
+    "group": "Edging",
+    "subsets": [
+      "AI creation",
+      "Animation",
+      "Virtual Graphics",
+      "Social Room",
+      "Finance Transaction"
+    ]
+  },
+  {
+    "group": "Industry",
+    "subsets": [
+      "Order",
+      "Cloud",
+      "CAM Service"
+    ]
+  },
+  {
+    "group": "Importance",
+    "subsets": [
+      "Financial",
+      "Productivity",
+      "Trending",
+      "Meticulous"
+    ]
+  },
+  {
+    "group": "Flow",
+    "subsets": [
+      "UX/UI",
+      "FrameWork IoC",
+      "Abstract & Algorithm"
+    ]
+  },
+  {
+    "group": "Practical Study",
+    "subsets": [
+      "History",
+      "Story",
+      "Contact",
+      "Resources"
+    ]
+  }
+]

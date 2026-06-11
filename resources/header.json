@@ -1,0 +1,40 @@
+{
+    "navigation":
+    [
+        {
+            "title": "Project",
+            "url": "/projects",
+            "check":null
+        },        
+        {
+            "title": "Community",
+            "url": "/activity"
+        },
+        {
+            "title": "Gallery",
+            "url": "/gallery"
+        },
+        {
+            "title": "About",
+            "url": "/about",
+            "check":null
+        }
+    ],
+    "burMenu":
+    [
+        {
+            "title": "Home",
+            "url": "/"
+        },
+        {
+            "title": "Gallery",
+            "url": "/gallery"
+        },
+        {
+            "title": "Tools",
+            "url": "/tool"
+        }
+        
+    ]
+
+}

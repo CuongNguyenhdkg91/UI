@@ -1,0 +1,4 @@
+
+.app-icon{@apply h-10 w-10 rounded-full border-solid border flex justify-center items-center }
+
+.inputBar{@apply h-8 w-64 bg-pink-50 rounded-md border-b-2 border-black p-2.5  }
